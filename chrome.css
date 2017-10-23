@@ -1,0 +1,32 @@
+/* CHROME */
+html, body {
+  margin: 0; padding: 20px;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+      max-width: 700px;
+      padding: 4rem;
+  }
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* KAIZENS */
+#kaizens {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* GIST */
+
+.gist-meta {
+  display: none !important;
+}
+
+.gist .js-line-number {display: none !important; }
