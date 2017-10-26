@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Kaizens</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>Kaizens</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -122,5 +121,37 @@
     Kaizens('create', '44-37373-22');
     </script>
 <!-- End Kaizens Votebox -->
+
+<!-- Generate Gist's new Kaizens' ID -->
+<script>
+$( document ).ready(function() {
+  function guid() {
+    function s4() {
+      return Math.floor((1 + Math.random()) * 0x10000)
+        .toString(16)
+        .substring(1);
+    }
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+      s4() + '-' + s4() + s4() + s4();
+  }
+
+  var gist = document.getElementsByClassName('gist');
+  var td  = gist[0].getElementsByTagName('td');
+
+  var regex = new RegExp(/XX-XXXXX-XX/);
+
+  for (var i = 0, content ; i < td.length; i++)
+  {
+      content = td[i].innerHTML;
+
+      if (content.match(regex))
+      {
+          var KaizensID = 'KA-' + guid();
+          td[i].innerHTML = content.replace(regex, KaizensID);
+      }
+  }
+};
+</script>
+<!-- End Gist's new Kaizens' ID -->
   </body>
 </html>
