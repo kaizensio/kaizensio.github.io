@@ -1,157 +1,109 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Kaizens</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/chrome.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-
-    <style>
-
-
-      .k-border {
-        box-shadow: 0px 10px 40px -10px rgba(0,64,128,0.2);
-        border-radius: 8px;
-      }
-
-      .k-love {
-        font-size: 13px;
-      }
-
-      code {
-        color: black;
-        background-color: #E3E8F8;
-        border: 1px solid rgba(0,0,0,.125);
-        border-radius: 4px;
-        display: inline-block;
-        margin: 0 .125em;
-        padding: 0 .25em;
-        white-space: pre-wrap;       /* css-3 */
-        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-        white-space: -pre-wrap;      /* Opera 4-6 */
-        white-space: -o-pre-wrap;    /* Opera 7 */
-        word-wrap: break-word;       /* Internet Explorer 5.5+ */
-      }
-
-      .k-bg {
-        background: #D7FFF1;
-
-      }
-
-
-      .k-logo {
-      color: black;
-      font-family: 'Righteous', serif;
-      font-size: 3em;
-      }
-
-      #kaizens h1 {
-         font-size: 25px;
-         padding-top: 20px;
-         padding-bottom: 20px;
-      }
-
-    </style>
-
-  <div class="k-bg pb-5">
-    <h1 class="k-logo text-center pt-4 pb-2" data-shadow='Kaisens'>kai<u>zen</u>s</h1>
-    <h4 class="text-center pb-4">Collect user feedbacks.</h4>
-    <div class="text-center">
-      <img src="tenor.gif" alt="">
-    </div>
-    <div class="pb-4 pt-5">
-      <p class="text-center col-md-6 offset-md-3" style="font-size: 1.15em;">Kaizens is a powerfull tool allowing <strong>your users to share their feedbacks</strong> on what features should be added in the future. </p>
-    </div>
-    <div>
-      <h4 class="text-center pb-3">A quick demo</h4>
-    </div>
-      <div style="background-color: white;" class="col-md-6 offset-md-3 container k-border pb-3 p-4">
-      </div>
-  </div>
-  <div class="wrapper">
-    <div class="p-5">
-      <h4 class="mb-3 mt-3 col-md-6 offset-md-3">Getting started</h4>
-      <h5 class="pt-3 col-md-6 offset-md-3">Step 1</h5>
-      <p class="col-md-6 offset-md-3">Copy this code snipped on your feedback dedicated page.</p>
-      <div class="col-md-6 offset-md-3 mb-3">
-        <div class="gist">
-          <script src="https://gist.github.com/kaizensio/f1b2fe1c76a721ed4567821b4dcb58fc.js">
-          </script>
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+  <link href="/css/landing.css" rel="stylesheet" type="text/css">
+  <title>Kaizens</title>
+</head>
+<body>
+  <content>
+    <section id="demo">
+      <div class="row">
+        <div class="col-sm-6 content">
+          <h1>Collecting feedbacks made simple.</h1>
+          <p>Kaizens is a simple tool that allows your users to share their feedbacks on what features should be added in the future.</p>
+          <ol class="steps">
+            <li class="active" style="width:30%"><span class="step-level">step 1</span><a href="#demo"><span class="step-title">TRY IT</span><span class="step-bar"></span></a></li>
+            <li style="width:44%"><span class="step-level">step 2</span><a href="#setup"><span class="step-title">INSERT CODE</span><span class="step-bar"></span></a></li>
+            <li style="width:25%"><span class="step-level">step 3</span><a href="#"><span class="step-title">NO STEP 3!</span></a></li>
+          </ol>
+        </div>
+        <div class="col-sm-6 demo">
+          <div id="kaizens"></div>
+          <div class="step-buttons">
+            <a class="step-button" href="#demo">Quick demo</a>
+            <a class="step-button active" href="#setup">Tracking code</a>
+          </div>
         </div>
       </div>
-      <div>
-        <h5 class="col-md-6 offset-md-3">Step 2</h5>
-        <p class="col-md-6 offset-md-3">There is no step 2!!</p>
+    </section>
+    <section id="setup">
+      <div class="row">
+        <div class="col-sm-6 content">
+          <h1>Insert tracking code on your website.</h1>
+          <p>Once you insert this code everything works right out of the box, ready to collect your customer's feedbacks and recommandations.</p>
+          <ol class="steps">
+            <li class="active" style="width:30%"><span class="step-level">step 1</span><a href="#demo"><span class="step-title">TRY IT</span><span class="step-bar"></span></a></li>
+            <li class="active" style="width:44%"><span class="step-level">step 2</span><a href="#setup"><span class="step-title">INSERT CODE</span><span class="step-bar"></span></a></li>
+            <li style="width:25%"><span class="step-level">step 3</span><a href="#"><span class="step-title">NO STEP 3!</span></a></li>
+          </ol>
+        </div>
+        <div class="col-sm-6 setup">
+          <h2>Copy and insert this code into your feedback page.</h2>
+          <button id="copycode-button" data-clipboard-target="#snippet">COPY CODE</button>
+          <textarea id="snippet"><script type="text/javascript">
+(function(k,a,i,z,e,n,s){k['KaizensObject']=e;k[e]=k[e]||function(){
+(k[e].q=k[e].q||[]).push(arguments)},k[e].l=1*new Date();n=a.createElement(i),
+k[e].e=z,s=a.getElementsByTagName(i)[0];n.async=1;n.src=z;s.parentNode.insertBefore(n,s)
+})(window,document,'script','https://app.kaizens.io/v1/lib.js','Kaizens');
+
+Kaizens('create', 'XX-XXXXX-XX');
+</script></textarea>
+          <p>Simply copy and paste this code before the closing <strong>&lt;/body&gt;</strong> tag onto your feedback page.</p>
+          <div class="step-buttons">
+            <a class="step-button active" href="#demo">Quick demo</a>
+            <a class="step-button" href="#setup">Tracking code</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="k-bg">
-    <div class="text-center col-md-6 offset-md-3 p-5">
-      <p>
-        Feel free to tell us how we can improve Kaizens.
-      </p>
-      <div class="text-center">
-        <span class="k-love">Made with <i class="fa fa-heart" aria-hidden="true"></i> in Paris </span>
-      </div>
-
-    </div>
-  </div>
+    </section>
+  </content>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <!-- Kaizens Votebox -->
-    <script>
-    (function(k,a,i,z,e,n,s){k['KaizensObject']=e;k[e]=k[e]||function(){
-    (k[e].q=k[e].q||[]).push(arguments)},k[e].l=1*new Date();n=a.createElement(i),
-    k[e].e=z,s=a.getElementsByTagName(i)[0];n.async=1;n.src=z;s.parentNode.insertBefore(n,s)
-    })(window,document,'script','https://app.kaizens.io/v1/lib.js','Kaizens');
-    Kaizens('create', '44-37373-22');
-    </script>
+<script>
+(function(k,a,i,z,e,n,s){k['KaizensObject']=e;k[e]=k[e]||function(){
+(k[e].q=k[e].q||[]).push(arguments)},k[e].l=1*new Date();n=a.createElement(i),
+k[e].e=z,s=a.getElementsByTagName(i)[0];n.async=1;n.src=z;s.parentNode.insertBefore(n,s)
+})(window,document,'script','https://app.kaizens.io/v1/lib.js','Kaizens');
+
+Kaizens('create', 'KA-56218128-1');
+Kaizens('title', 'Let us know what you think of it!');
+Kaizens('placeholder', 'Tell us how we can improve Kaizens...');
+Kaizens('submit', 'Send feature');
+//Kaizens('container', 'pageview');
+//Kaizens('stylesheet', 'default');
+//Kaizens('username', 'frenchcooc');
+
+var clipboard = new Clipboard('#copycode-button');
+</script>
 <!-- End Kaizens Votebox -->
 
-<!-- Generate Gist's new Kaizens' ID -->
+<!-- Clipboard -->
 <script>
-$( document ).ready(function() {
+var clipboard = new Clipboard('#copycode-button');
+</script>
+<!-- End Clipboard -->
+
+<!-- Generate new Kaizens's snippet -->
+<script>
+(function() {
   function guid() {
     function s4() {
       return Math.floor((1 + Math.random()) * 0x10000)
         .toString(16)
         .substring(1);
     }
-    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-      s4() + '-' + s4() + s4() + s4();
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4();
   }
 
-  var gist = document.getElementsByClassName('gist');
-  var td  = gist[0].getElementsByTagName('td');
+  var snippet   = document.getElementById('snippet');
+  var regex     = new RegExp(/XX-XXXXX-XX/);
+  var KaizensID = 'KA-' + guid();
 
-  var regex = new RegExp(/XX-XXXXX-XX/);
-
-  for (var i = 0, content ; i < td.length; i++)
-  {
-      content = td[i].innerHTML;
-
-      if (content.match(regex))
-      {
-          var KaizensID = 'KA-' + guid();
-          td[i].innerHTML = content.replace(regex, KaizensID);
-      }
-  }
-});
+  snippet.innerHTML = snippet.innerHTML.replace(regex, KaizensID);
+})();
 </script>
-<!-- End Gist's new Kaizens' ID -->
-  </body>
-</html>
+<!-- End Generate new Kaizens's snippet -->

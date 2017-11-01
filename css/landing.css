@@ -1,0 +1,166 @@
+/* CHROME */
+
+html, body {
+  margin: 0; padding: 20px;
+}
+
+body {
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f8f8f8;
+  background-image: url(/img/body-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+* { box-sizing: border-box; }
+
+content {
+  display: block;
+  max-width: 1000px;
+}
+
+section { display: block; padding: 1em 0 15em 0; }
+section:last-child { padding-bottom: 5em; }
+
+a:hover { text-decoration: none; }
+
+/* CONTENT */
+
+.content {
+  padding: 0 3em;
+}
+
+.content h1 {
+  margin: 0.5em 0;
+  font-size: 4em;
+}
+
+.content p {
+  color: #696A6C;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+
+.content .steps {
+  margin: 10px 20px 40px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.content .step-level {
+  color: #6F6F71;
+  font-style: italic;
+  display: block;
+}
+
+.content .steps li a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.content .step-bar {
+  height: 1px;
+  width: 30%;
+  content: " ";
+  border-bottom: 1px solid #D5D5D5;
+  margin: 10px 5px 0 8px;
+}
+
+.content .step-title {
+  display: inline-block;
+  font-weight: 700;
+  color: #D6D6D6;
+  font-style: normal;
+}
+
+.content .steps li a:hover .step-title,
+.content .steps li.active .step-title { color: #222325; }
+
+a.step-button {
+  position: absolute;
+  bottom: -48px;
+  width: 50%;
+  height: 48px;
+  padding: 14px;
+  margin: 0;
+  display: none;
+}
+
+a.step-button.active {
+  display: block;
+}
+
+a.step-button.active:hover {
+  background-color: #007bff;
+  color: #FFF;
+}
+
+.step-button:last-child {
+  right: -1px;
+  text-align: right;
+}
+
+.step-button:last-child::after {
+  content: "\2192";
+  padding: 0 2em;
+}
+
+.step-button:first-child  {
+  left: -1px;
+}
+
+.step-button:first-child::before {
+  content: "\2190";
+  padding: 0 2em;
+}
+
+/* DEMO + SETUP */
+
+.demo, .setup {
+  border: 1px solid #D3D3D3;
+  background-color: #FFF;
+  padding: 2em 3em;
+  min-height: 500px;
+}
+
+/* SETUP */
+
+#snippet {
+  border: 1px solid #E1E1E1;
+  margin: 0.5em 0;
+  padding: 1em 1.5em;
+  width: 100%;
+  min-height: 200px;
+  color: #747474;
+  outline: none;
+}
+
+#copycode-button {
+  border: 0px;
+  background-color: transparent;
+  color: #0083EE;
+  outline: none;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+/* KAIZENS */
+
+.setup p {
+  color: #686868;
+}
+
+.setup h2 {
+  margin-bottom: 1.5em;
+}
+
+/* KAIZENS */
+
+#kaizens input[type=submit] {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
