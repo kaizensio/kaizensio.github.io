@@ -91,14 +91,14 @@ Kaizens('submit', 'Send feature');
 //Kaizens('stylesheet', 'default');
 //Kaizens('username', 'frenchcooc');
 </script>
-<!-- End Kaizens Votebox -->
+<!-- END - Kaizens -->
 
 <!-- Clipboard -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 <script>
 var clipboard = new Clipboard('#copycode-button');
 </script>
-<!-- End Clipboard -->
+<!-- END - Clipboard -->
 
 <!-- Generate new Kaizens's snippet -->
 <script>
@@ -119,7 +119,18 @@ var clipboard = new Clipboard('#copycode-button');
   snippet.innerHTML = snippet.innerHTML.replace(regex, KaizensID);
 })();
 </script>
-<!-- End Generate new Kaizens's snippet -->
+<!-- END - Kaizens's snippet -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109096438-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109096438-1');
+</script>
+<!-- END - Google Analytics -->
 
 </body>
 </html>
