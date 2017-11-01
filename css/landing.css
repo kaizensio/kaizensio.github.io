@@ -134,9 +134,10 @@ a.step-button.active:hover {
   margin: 0.5em 0;
   padding: 1em 1.5em;
   width: 100%;
-  min-height: 200px;
+  min-height: 170px;
   color: #747474;
   outline: none;
+  white-space: nowrap;
 }
 
 #copycode-button {
@@ -171,12 +172,4 @@ a.step-button.active:hover {
   position: fixed;
   top: 20px;
   right: 20px;
-}
-
-/* MOBILE */
-
-@media (max-width:680px) {
-  a.step-button {
-    width: 100%;
-  }
 }
