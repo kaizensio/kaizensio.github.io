@@ -83,7 +83,7 @@ a:hover { text-decoration: none; }
 a.step-button {
   position: absolute;
   bottom: -48px;
-  width: 100%;
+  width: 50%;
   height: 48px;
   padding: 14px;
   margin: 0;
@@ -171,4 +171,12 @@ a.step-button.active:hover {
   position: fixed;
   top: 20px;
   right: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width:680px) {
+  a.step-button {
+    width: 100%;
+  }
 }
