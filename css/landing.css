@@ -137,7 +137,7 @@ a.step-button.active:hover {
   min-height: 170px;
   color: #747474;
   outline: none;
-  white-space: nowrap;
+  white-space:pre;
 }
 
 #copycode-button {
